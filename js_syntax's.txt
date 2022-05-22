@@ -1,0 +1,26 @@
+alert Box: Onclick function name is taken in the button tag. 
+<script>
+function myFunction(){
+console.log("hi ra bachaa...!");
+}
+</script>
+
+
+window alert box:
+<script>
+console.error("you made a mistake");
+</script>
+
+
+cubic numbers:
+
+<script type="text/javascript">  
+function getcube(){  
+var number=document.getElementById("number").value;  
+alert(number*number*number);  
+}  
+</script>  
+<form>  
+Enter No:<input type="text" id="number" name="number"/><br/>  
+<input type="button" value="cube" onclick="getcube()"/>  
+</form>  
