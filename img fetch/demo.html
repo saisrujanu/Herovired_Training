@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+		<title>Demo Page</title>
+
+	</head>
+	
+	<body>
+
+		<form action='http://localhost:3000/img' method='POST' enctype="multipart/form-data">
+			ImageName: <input type='text' name='name'/><br/>
+			Image: <input type='file' name='image'/><br/>
+			<input type='submit' value='submit'/>
+		</form>
+		
+		<button onclick="getImage()">Get Image</button>
+		<div id="container">
+			<img id="img"/>
+		</div>
+		<script>
+			let element = document.getElementById('img');
+			async function getImage(){
+				let res = await fetch('/getimage');
+				let data = await res.json();
+				console.log(data);
+				let dataString = "data:image/png;base64,"+data.data;
+				element.setAttribute('src',dataString);
+			}
+		</script>
+	</body>
+</html>
