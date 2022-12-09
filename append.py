@@ -1,0 +1,6 @@
+file=open('data.txt','a')
+file.write('i am making the new changes of the data')
+file.write('i am making the new bike')
+file.write('i am making the new car')
+file.write('i am making the new rocket')
+file.close()
