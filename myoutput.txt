@@ -1,0 +1,6 @@
+15
+20
+myoutput
+15
+myoutput for question2
+{'Benz': 'blue'}
