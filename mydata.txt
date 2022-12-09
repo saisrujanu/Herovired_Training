@@ -1,0 +1,10 @@
+my output
+the amount of all products
+the amount of all products
+the amount of all products
+the amount of all products
+5 500
+The amount that you need to pay 7500
+the amount of all products {3: 500} /n Total price of ech product:
+3 500
+The amount that you need to pay 4500
